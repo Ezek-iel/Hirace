@@ -1,0 +1,9 @@
+// Set your brand colors
+$light-blue: #635bff;
+
+// Path to Bulma's sass folder
+@use "bulma/sass" with (
+  $family-primary: '"Nunito", sans-serif',
+  $primary: $light-blue,
+  $link: $light-blue,
+);

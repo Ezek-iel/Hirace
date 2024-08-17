@@ -7,12 +7,16 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build-bulma": "sass --load-path=node_modules ./src/override.scss ./src/css/style.css",
+    "start": "npm run build-bulma -- --watch"
   },
   "dependencies": {
     "bulma": "^1.0.2",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.3.0",
+    "swiper": "^11.1.9"
   },
   "devDependencies": {
     "@eslint/js": "^9.8.0",
